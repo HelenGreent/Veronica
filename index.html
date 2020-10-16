@@ -5,41 +5,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Вероніка</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="styleSheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/reset.css"> 
     </head>
     <body>
         <header>
-            <div>
+            <div class="header d-flex"> 
+            <div class="logo">
                 <img src="img/logobordo.png" alt="Вероніка">
             </div>
-            <nav>
-                <ul>
-                    <li>
+            <nav class="menu-items d-flex">
                         <a href="#login">Вхід</a>
-                    </li>
-                    <li>
                         <a href="#about">Про нас</a>
-                    </li>
-                    <li>
                         <a href="#products">Товари</a>
-                    </li>
-                    <li>
                         <a href="#faq">FAQ</a>
-                    </li>
-                </ul>
             </nav>
+            </div>
         </header>
-        <main>
+         <main>
             <section>
-                <h1>confectionery-restaurant "Veronica"</h1>
-                <img src="img/veronica.jpg" alt="Вероніка" width="300">
-                <img src="img/veronika.jpg" alt="Вероніка" width="300">
-                <img src="img/veronica-kyiv.jpg" alt="Вероніка Київ" width="300">
-                <img src="img/veronica_airport.jpg" alt="Вероніка Аеропорт" width="300">
+                <!--<h1>confectionery-restaurant "Veronica"</h1>
+                    <div class="scroll">
+                        <img src="img/veronica.jpg" alt="Вероніка" width="300">
+                        <img src="img/veronika.jpg" alt="Вероніка" width="300">
+                        <img src="img/veronicakyiv.jpg" alt="Вероніка Київ" width="300">
+                        <img src="img/veronica_airport.jpg" alt="Вероніка Аеропорт" width="300">
+                    </div>
                 <i class='fas fa-angle-left' style='font-size:36px'></i>
-                <i class='fas fa-angle-right' style='font-size:36px'></i>
-                <!-- find icon arrow-->
+                <i class='fas fa-angle-right' style='font-size:36px'></i> -->
                 <h2>Запрошуємо до кондитерської-ресторану"Вероніка"</h2>
-                <ul>
+                <ul class="menu-product">
                     <li>Торти</li>
                     <li>Морозиво</li>
                     <li>Шоколадны Цукерки</li>
@@ -47,17 +42,16 @@
                     <li>Тістечка</li>
                     <li>Мармелад</li>
                 </ul>
-                <label>
-                    Veronica Family:
-             
-                    <select name="city" id="city">
+                <label class="city">
+                    <p class="veronica city" >Veronica Family:</p>
+                    <select name="city">
                         <option value="lviv">Lviv</option>
                         <option value="kyiv">Kyiv</option>
                     </select>
                 </label>
                 <hr>
             </section>
-            <div class="products">
+            <!--<div class="products">
                 <div class="sweet">
                     <img src="img/nutscake.jpg" alt="Горіховий торт" width="300">
                     <span class="fa fa-star checked"></span>
@@ -169,7 +163,7 @@
             </div>
         </main>
         <footer>
-            <img src="img/whitelogo.png" alt="Вероніка" width="300">
+            <img src="img/whitelogo.png" alt="veronica" width="300">
             <i class="fab fa-instagram"></i>
             <i class="fab fa-pinterest"></i>
             <i class="fab fa-tiktok"></i>
@@ -190,5 +184,5 @@
             </span>
         </footer>
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    </body>
+    </body> 
 </html>

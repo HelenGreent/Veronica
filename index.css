@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bad+Script&family=Lobster&display=swap');
+:root{
+    --main-color:black;
+    --accent-color:#3A0808;
+    font-family: 'Abel',sans-serif;
+}
+
+body {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header .header{
+    padding: 1% 5px 5px 5px;
+}
+
+header .logo img{
+    height: 90px;
+}
+/* flex:1 - віддає весь вільний розмір */
+header .menu-items{
+    flex:1;
+    padding-top: 2%;
+}
+
+header .menu-items a{
+    display: block;
+    text-decoration: none;
+    font-family: 'Bad Script', cursive;
+    font-weight: 700;
+    font-size: 1.5rem; 
+    color: var(--accent-color);
+    cursor: pointer;
+    padding: 15px;   
+}
+
+header .menu-items a:hover{
+    transform: scale(1.2);
+}
+
+@media (min-width: 769px) {
+
+     header .header{
+        display: flex;
+    }
+
+    header .menu-items{
+       display: flex;
+       justify-content: flex-end;
+    }
+}
+/*при <448 не по центу?*/
+main section h2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Bad Script', cursive;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding:20px 5px 20px 5px;
+}
+
+main section ul li{
+    display: flex;
+    justify-content: center;
+    font-family: 'Abel', sans-serif;
+    color: var(--main-color);
+    padding: 5px 5px 5px 5px;
+
+}
+
+@media (min-width: 450px) {
+
+    main section .menu-product{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-gap: 5px;
+    }
+}
+
+@media (min-width: 520px) {
+
+    main section .menu-product{
+       grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+main section .veronica{
+font-family: 'Lobster', cursive;
+font-size: 2rem;
+padding: 20px 0px 15px 0px;
+}
+
+main section .city{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+main section hr{
+    width: 150px;
+    size: 3px;
+    color: darkslategrey;
+}
